@@ -14,7 +14,7 @@
     <div id="Employee">
         <form id="EmployeeID">
             <label>Enter Employee ID: </label>
-            <input type="number" placeholder="Numbers Only" name="username" required>
+            <input type="number" onkeydown="if(this.value.length==7) return false" placeholder="Numbers Only" name="username" required >
             <input type="submit" value = "Submit">
         </form>
     </div>
