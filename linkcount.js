@@ -46,18 +46,7 @@ window.onload=function(){
                 wednesdayAppear[i].style.display="none";
                 thursdayAppear[i].style.display="block";
             }
-        }
-            
-
-        /*
-        var tab = document.createElement("table");
-        tab.setAttribute("class","links");
-        var tr = document.createElement("tr");
-        var th1 = document.createElement("th");
-        th1.innerHTML="Monday";
-        tr.appendChild(th1);
-        */
-        
+        }    
     });
     //update count from database
     var link = document.getElementById("Monday");
