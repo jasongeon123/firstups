@@ -8,40 +8,20 @@
     <script src="linkcount.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body style="font-family:Roboto; text-align:center" >
-    
-    <h1>Welcome to your home page.</h1>
-    <h3>Description of what you will do.</h3>
-    <div id="Employee">
-        <form id="EmployeeID">
-            <label>Enter Employee ID: </label>
-            <input type="number" onkeydown="if(this.value.length==7) return false" placeholder="Numbers Only" name="username" required >
-            <input type="submit" value = "Submit">
-        </form>
+<body style="font-family:Roboto;text-align: center;background-image: url('Media/Pic2.png'); background-repeat: no-repeat; color:rgb(256,256,256)" >
+    <div style="display:flex;  height:100vh; align-items:center; justify-content:center;">
+        <div style="border-radius:25px; display:flex; flex-direction: column; width: 43vh; height:15vh; background-color:rgba(140, 133, 133, 0.8);align-items:center; justify-content:center;">  
+            <h1 style="margin:0;">Welcome to your training home page.</h1>
+            <h3>Enter Employee ID to see tasks</h3>
+            <div id="Employee">
+                <form id="EmployeeID">
+                    <label>Enter Employee ID: </label>
+                    <input type="number" onkeydown="if(this.value.length==7) return false" placeholder="Numbers Only" name="username" required >
+                    <input type="submit" value = "Submit">
+                </form>
+            </div>
+        </div>  
     </div>
-    <!---
-    <div id="disappear">
-        <table>
-            <tr>
-                <th class="1" style="display: none">Monday</th>
-                <th class="2" style="display: none">Tuesday</th>
-                <th class="3" style="display: none">Wednesday</th>
-                <th class="4" style="display: none">Thursday</th>
-            </tr>
-            <tr>
-                <th class="1" style="display: none">Monday's Description</th>
-                <th class="2" style="display: none">Tuesday's Description</th>
-                <th class="3" style="display: none">Wednesday's Description</th>
-                <th class="4" style="display: none">Thursday's Description</th>
-            </tr>
-            <tr>
-                <td> <a href="monday/monday.html" id="Monday" class="1" style="display: none">Monday Link</a></td>
-                <td> <a href="tuesday/tuesday.html" id="Tuesday" class="2" style="display: none">Tuesday Link</a></td>
-                <td> <a href="wednesday/wednesday.html" id="Wednesday" class="3" style="display: none">Wednesday Link</a></td>
-                <td> <a href="thursday/thursday.html" id="Thursday" class="4" style="display: none">Thursday Link</a></th>
-            </tr>
-        </table> 
-    </div>
-    --->
 </body>
+<!---UPS Gray 4 is 216,212,215 -->
 </html>
