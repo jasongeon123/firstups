@@ -1,4 +1,5 @@
 window.onload=function(){
+    document.getElementById("eid").innerHTML= `Employee ID: ${window.sessionStorage.getItem("username")}`;
     let SeeingHabitsCount=0;
     let Scramble5seeingCount=0;
     let PointCommentaryCount=0;
