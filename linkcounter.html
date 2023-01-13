@@ -10,13 +10,12 @@
 </head>
 <body style="font-family:Roboto;text-align: center;background-image: url('Media/Pic2.png'); background-repeat: no-repeat; color:rgb(256,256,256)" >
     <div style="display:flex;  height:100vh; align-items:center; justify-content:center;">
-        <div style="border-radius:25px; display:flex; flex-direction: column; width: 43vh; height:15vh; background-color:rgba(140, 133, 133, 0.8);align-items:center; justify-content:center;">  
-            <h1 style="margin:0;">Welcome to your training home page.</h1>
-            <h3>Enter Employee ID to see tasks</h3>
+        <div style="border-radius:25px; display:flex; flex-direction: column; width: 60vh; height:20vh; background-color:rgba(0, 0, 0, 0.7);align-items:center; justify-content:center;">  
+            <h1 style="margin:0;margin-bottom:2vh">Welcome to your training home page.</h1>
             <div id="Employee">
                 <form id="EmployeeID">
-                    <label>Enter Employee ID: </label>
-                    <input type="number" onkeydown="if(this.value.length==7) return false" placeholder="Numbers Only" name="username" required >
+                    <label>Enter 7-digit Employee ID: &nbsp;</label>
+                    <input type="number" onkeydown="if(this.value.length==7) return false" name="username" placeholder="Enter Here" required >
                     <input type="submit" value = "Submit">
                 </form>
             </div>
