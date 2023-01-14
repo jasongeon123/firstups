@@ -8,23 +8,61 @@
     <script src="monday.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body style="font-family:Roboto;text-align: center;">
-    <h1>Day 1: Monday</h1>
-    <h2>Select the item(s) you would like to practice from the options  below.  If you elect to use the 5/10 practice form, your scores are not recorded; if you would like to “test out” locate a facilitator to administer this activity.</h2>
-    <h3><i>"Talent is a pursued interest, anything that you're willing to practice, you can do." -Bob Ross</i></h3>
-    <table style="margin-left:auto;margin-right:auto;width:50%;">
-        <tr>
-            <th class="1">5 Seeing Habits Form<div><a href="../IndividualPages/5SeeingHabits.html" id="5SeeingHabits" class="1">5 Seeing Habits Link</a></div></th>
-        </tr>
-        <tr>
-            <th class="2">Word Scramble: 5 Seeing Habits<div><a href="../Scramble5seeing/Five Seeing Habits Word Scramble/story.html" id="Scramble5seeing" class="2">Word Scramble: 5 Seeing Habits Link</a></div></th>
-        </tr>
-        <tr>
-            <th class="3">10 Point Commentary Form<div><a href="../IndividualPages/10PointCommentary.html" id="10PointCommentary" class="3">10 Point Commentary Link</a></div></th>
-        </tr>
-        <tr>
-            <th class="4">Word Scramble: 10 Point Commentary<div><a href="../Scramble10point/Ten Point Commentary Knowledge Check/story.html" id="Scramble10point" class="4">Word Scramble: 10 Point Commentary Link</a></div></th>
-        </tr>
-    </table>
+<body style="font-family:Roboto;text-align: center;background-image: url('../Media/Pic2.png');color:rgb(226, 226, 226)">
+    <div style="display:flex;  height:100vh; align-items:center; justify-content:center;">
+        <div style="border-radius:25px;display:flex; flex-direction: column; width: 60vw; background-color:rgba(0, 0, 0, 0.8);align-items:center; justify-content:center;">   
+            <h1 style="margin-bottom:0;">Day 1: Monday</h1>
+            <h3 id="eid"></h3>
+            <h2 style="margin-left:2vh; margin-right:2vh; margin-top:0;">Select the item(s) you would like to practice from the options  below.  If you elect to use the 5/10 practice form, your scores are not recorded; if you would like to “test out” locate a facilitator to administer this activity.</h2>
+            <h3><i>"Talent is a pursed interest, anything that you're willing to practice, you can do." -Bob Ross</i></h3>
+            <table style="margin-left:auto;margin-right:auto;width:50%; margin-bottom:1vh">
+                <tr>
+                    <th class="1">
+                        <a href="../Scramble5seeing/Five Seeing Habits Word Scramble/story.html" id="Scramble5seeing" class="1" style="display:flex; text-decoration:none; color:rgb(226, 226, 226);margin-top:1vh;margin-bottom:1vh;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(226, 226, 226)'">
+                            <div style="display:flex; background-color:rgb(53,28,21);border-radius: 30px;width:45vw;height:5vh;align-items:center; justify-content:space-between; font-size:2.2vh;" onmouseover="this.style.backgroundColor='rgb(255, 181, 0)';document.getElementById('image1').src='../Media/black5.png'" onmouseout="this.style.backgroundColor='rgb(53,28,21)';document.getElementById('image1').src='../Media/nocolorhand.png'">
+                                <img src="../Media/nocolorhand.png" id = "image1" style="height:4vh; order:-1;margin-left:1vh">   
+                                Word Scramble: 5 Seeing Habits
+                                <div style="margin-right:1vh"></div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="2">
+                        <a href="../IndividualPages/5SeeingHabits.html" id="5SeeingHabits" class="2" style="display:flex; text-decoration:none; color:rgb(226, 226, 226);margin-bottom:1vh" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(226, 226, 226)'">
+                            <div style="display:flex; background-color:rgb(53,28,21);border-radius: 30px;width:45vw;height:5vh;align-items:center; justify-content:space-between; font-size:2.2vh;" onmouseover="this.style.backgroundColor='rgb(255, 181, 0)';document.getElementById('image2').src='../Media/black5.png'" onmouseout="this.style.backgroundColor='rgb(53,28,21)';document.getElementById('image2').src='../Media/nocolorhand.png'">
+                                <img id ="image2" src="../Media/nocolorhand.png" style="height:4vh; order:-1;margin-left:1vh" >   
+                                5 Seeing Habits Practice Form
+                                <div style="margin-right:1vh"></div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="3">
+                        <a href="../Scramble10point/Ten Point Commentary Knowledge Check/story.html" id="Scramble10point" class="3" style="display:flex; text-decoration:none; color:rgb(226, 226, 226); margin-bottom:1vh" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(226, 226, 226)'">
+                            <div style="display:flex; background-color:rgb(53,28,21);border-radius: 30px;width:45vw;height:5vh;align-items:center; justify-content:space-between; font-size:2.2vh;" onmouseover="this.style.backgroundColor='rgb(255, 181, 0)';document.getElementById('image3').src='../Media/blackboth.png'" onmouseout="this.style.backgroundColor='rgb(53,28,21)';document.getElementById('image3').src='../Media/nocolorboth.png'">
+                                <img id="image3"src="../Media/nocolorboth.png" style="height:3vh; width:5vh; order:-1;margin-left:1vh">   
+                                Word Scramble: 10 Point Commentary
+                                <div style="margin-right:1vh"></div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="4">
+                        <a href="../IndividualPages/10PointCommentary.html" id="10PointCommentary" class="4" style="display:flex; text-decoration:none; color:rgb(226, 226, 226);margin-bottom:1vh" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(226, 226, 226)'">
+                            <div style="display:flex; background-color:rgb(53,28,21);border-radius: 30px;width:45vw;height:5vh;align-items:center; justify-content:space-between; font-size:2.2vh;"onmouseover="this.style.backgroundColor='rgb(255, 181, 0)';document.getElementById('image4').src='../Media/blackboth.png'" onmouseout="this.style.backgroundColor='rgb(53,28,21)';document.getElementById('image4').src='../Media/nocolorboth.png'">
+                                <img id ="image4"src="../Media/nocolorboth.png" style="height:3vh; width:5vh;order:-1;margin-left:1vh">   
+                                10 Point Commentary Practice Form
+                                <div style="margin-right:1vh"></div>
+                            </div>
+                        </a>
+                    </th>
+                </tr>
+                
+            </table>
+        </div> 
+    </div>
 </body>
 </html>
